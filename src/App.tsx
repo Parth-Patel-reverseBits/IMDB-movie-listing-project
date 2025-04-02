@@ -1,4 +1,4 @@
-import Card from "./components/card"
+import Card from "../src/components/Card"
 import { useEffect, useState } from "react"
 import axios from "axios"
 const App = () => {
