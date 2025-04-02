@@ -33,14 +33,14 @@ const Card = ({ data,fetchData,setPage,page } ) => {
     >
       <div>
         {data.map((item, index) => (
-          <div key={index} className="flex mt-10 mx-50">
+          <div key={index} className="bg-[#161F30] rounded-2xl  lg:flex mt-10 lg:mx-50 text-white ">
             <img
-              className="w-[200px] rounded-2xl"
+              className="w-full h-[200px] dark:rounded-2xl rounded-none object-cover lg:w-[200px] lg:h-full lg:rounded-2xl"
               src={item.imageUrl}
               alt={item.movieName}
             />
-            <div className="w-full bg-[#161F30] p-5 rounded-2xl">
-              <h1 className="text-3xl font-bold">
+            <div className="w-full bg-[#161F30] p-5 lg:rounded-2xl">
+              <h1 className=" text-3xl font-bold">
                 {index + 1}. {item.movieName}
               </h1>
               <p className="mt-5">{item.description}</p>
